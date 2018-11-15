@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var Teamperature = function (temp) {
+        this.temp = temp;
+        this.toF = function () {
+            return this.temp*1.8+32
+        }
+        this.toK = function () {
+            return this.temp+273.15
+        }
+    }
+    var Temp = new Teamperature(25);
+    var doF = Temp.toF();
+    var doK = Temp.toK();
+
+    alert("Nhiet do theo do F: "+doF + " va theo do K: " + doK);
+</script>
+</body>
+</html>
